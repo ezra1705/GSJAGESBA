@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSJA GESBA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>GSJA Generasi Baru</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#jadwal" class="nav-link">Jadwal Ibadah</a></li>
+                <li><a href="#acara" class="nav-link">Acara</a></li>
+                <li><a href="#galeri" class="nav-link">Galeri</a></li>
+                <li><a href="#doa" class="nav-link">Permohonan Doa</a></li>
+                <li><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="img/LogoWinners.jpg" alt="GSJA GESBA Logo" class="hero-logo">
+            <h1>Selamat Datang di GSJA GESBA</h1>
+            <p>Bless, Growing, Impact</p>
+            <a href="#jadwal" class="cta-button">Ikuti Ibadah Minggu Ini</a>
+        </div>
+    </section>
+
+    <!-- Jadwal Ibadah -->
+    <section id="jadwal" class="section">
+        <div class="container">
+            <h2 class="section-title">Jadwal Ibadah</h2>
+            <div class="schedule-grid">
+                <div class="schedule-card">
+                    <h3>Ibadah Umum</h3>
+                    <p>Minggu, 09:00 WIB</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>Ibadah Remaja</h3>
+                    <p>Minggu, 11:30 WIB</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>Ibadah Sekolah Minggu</h3>
+                    <p>Minggu, 11.00 WIB</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>Ibadah Kaum Wanita</h3>
+                    <p>Kamis, 18.00 WIB</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>Menara Doa</h3>
+                    <p>Sabtu, 06.00 WIB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acara -->
+    <section id="acara" class="section">
+        <div class="container">
+            <h2 class="section-title">Acara Mendatang</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <h3>Ibadah Kenaikan</h3>
+                    <p>17 Mei 2026</p>
+                    <p>GSJA GESBA</p>
+                </div>
+                <div class="event-card">
+                    <h3>Ibadah Pencurahan</h3>
+                    <p>18 - 28 Mei 2026</p>
+                    <p>GSJA GESBA</p>
+                </div>
+                <div class="event-card">
+                    <h3>Carecell Leaders</h3>
+                    <p>Setiap Rabu 18:00</p>
+                    <p>Online &amp; Offline</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="section">
+        <div class="container">
+            <h2 class="section-title">Galeri Foto</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="img/gesba12.png" alt="Pemuda">
+                    <div class="overlay"><p>GSJA GESBA</p></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gesba10.jpg" alt="Ibadah">
+                    <div class="overlay"><p>GSJA GESBA</p></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gesba18.jpg" alt="Ibadah">
+                    <div class="overlay"><p>GSJA GESBA</p></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gesba9.jpg" alt="Pelayan">
+                    <div class="overlay"><p>GSJA GESBA</p></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gesba16.jpg" alt="Ibadah">
+                    <div class="overlay"><p>GSJA GESBA</p></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/gesba11.jpg" alt="Ibadah">
+                    <div class="overlay"><p>GSJA GESBA</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Permohonan Doa -->
+    <section id="doa" class="section">
+        <div class="container">
+            <h2 class="section-title">Permohonan Doa</h2>
+            <p>Bagikan bebanmu kepada Tuhan melalui permohonan doa ini.</p>
+            <button class="cta-button" id="openPrayerModal">Kirim Permohonan Doa</button>
+        </div>
+    </section>
+
+    <!-- Modal Permohonan Doa -->
+    <div id="prayerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times</span>
+            <h2>Permohonan Doa</h2>
+            <form id="prayerForm">
+                <input type="text" id="name" placeholder="Nama Anda" required>
+                <textarea id="prayer" placeholder="Permohonan doa Anda..." required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Kontak -->
+    <section id="kontak" class="section">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+
+                    <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+62 818-118-185</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://instagram.com/gsja_gesba" target="_blank">@gsja_gesba</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Gsja Cempaka Mas</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>GSJA GENERASI BARU</span>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.300573044745!2d106.87118457498991!3d-6.164894293822341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5007fb16d01%3A0x5c232cdc9aed85!2sGSJA%20GENERASI%20BARU!5e1!3m2!1sid!2sid!4v1777219901632!5m2!1sid!2sid"
+                        width="100%" 
+                        height="250" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <input type="text" id="contactName" placeholder="Nama" required>
+                    <input type="email" id="contactEmail" placeholder="Email" required>
+                    <textarea id="contactMessage" placeholder="Pesan" required></textarea>
+                    <button type="submit">Kirim Pesan</button>
+                    </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy GSJA GENERASI BARU. Bless, Growing, Impact.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
